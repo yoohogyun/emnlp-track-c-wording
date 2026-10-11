@@ -1,0 +1,40 @@
+# Secrets — private GitHub is not a secret store.
+.env*
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Local source material and run artifacts (preserve locally, publish selectively).
+/data/raw/
+/data/local/
+/data/processed/
+/artifacts/
+/outputs/
+/runs/
+/local/
+*.zip
+*.tar
+*.tar.gz
+*.pt
+*.pth
+*.ckpt
+
+# Python / editors / generated build files.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+/paper/build/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz

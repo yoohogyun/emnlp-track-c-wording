@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "This is an infrastructure smoke test for a fictional negotiation. Express the supplied meaning accurately in one sentence. Return JSON with exactly one key, utterance. Do not add commitments or omit the condition."
+  },
+  {
+    "role": "user",
+    "content": "Speaker A offers speaker B a share of 0.4, only if B de-escalates. Use plain English. This is synthetic, not a real quotation."
+  }
+]

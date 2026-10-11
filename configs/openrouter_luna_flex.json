@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "endpoint_url": "https://openrouter.ai/api/v1/chat/completions",
+  "metadata_url": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-luna/endpoints",
+  "metadata_snapshot": "docs/openrouter_endpoints.snapshot.json",
+  "api_key_env": "OR_KEY",
+  "api_key_file": "../.env",
+  "timeout_seconds": 180,
+  "automatic_retries": 0,
+  "generation_seed_base": 110001,
+  "request": {
+    "model": "openai/gpt-5.6-luna",
+    "service_tier": "flex",
+    "provider": {
+      "only": [
+        "openai/flex"
+      ],
+      "order": [
+        "openai/flex"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true,
+      "max_price": {
+        "prompt": 0.1,
+        "completion": 0.6
+      }
+    },
+    "stream": false,
+    "max_tokens": 512,
+    "reasoning": {
+      "effort": "none",
+      "exclude": true,
+      "context": "current_turn",
+      "mode": "standard"
+    },
+    "verbosity": "low",
+    "tool_choice": "none",
+    "prompt_cache_options": {
+      "mode": "explicit"
+    },
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "negotiation_utterance_v1",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "utterance": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "utterance"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "omitted_parameters": {
+    "temperature": "Not advertised by the selected Flex endpoint; do not silently use 0 or 0.7.",
+    "top_p": "Not advertised by the selected Flex endpoint.",
+    "top_k": "Not advertised by the selected Flex endpoint.",
+    "frequency_penalty": "Not advertised by the selected Flex endpoint.",
+    "presence_penalty": "Not advertised by the selected Flex endpoint.",
+    "repetition_penalty": "Not advertised by the selected Flex endpoint.",
+    "stop": "Not advertised; use JSON schema and token cap.",
+    "logprobs": "Not advertised by the selected Flex endpoint.",
+    "max_completion_tokens": "Use max_tokens, the selected endpoint's advertised equivalent, not both aliases.",
+    "include_reasoning": "Deprecated alias; reasoning.exclude is set explicitly.",
+    "reasoning_effort": "Use reasoning.effort, not both aliases.",
+    "tools": "No tools supplied; tool_choice is none.",
+    "parallel_tool_calls": "Not applicable without tools.",
+    "structured_outputs": "Use explicit response_format.json_schema; capability is checked.",
+    "web_search_options": "No web access or external tools during generation."
+  }
+}

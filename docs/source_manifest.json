@@ -1,0 +1,72 @@
+{
+  "source_bundles": [
+    {
+      "filename": "Midterm-20261010T021032Z-1-001.zip",
+      "bytes": 28142665,
+      "sha256": "ca41eead4cd46bfd49c655a710d0f534aa52864d5979dd2f6b454b2f89df76e8",
+      "included_in_repository": false
+    },
+    {
+      "filename": "dataset-20261010T022106Z-1-001.zip",
+      "bytes": 26853612,
+      "sha256": "4f66c371edacb435a184c40ce7cc5fb754f4b599d4b30c15c889a667416d1af1",
+      "included_in_repository": false
+    },
+    {
+      "filename": "ABC_Track_Guides_COLING_Examples_EN.zip",
+      "bytes": 1227395,
+      "sha256": "00898af71142e9b55ea9d921c843f6813714e5f6e21d0ee7d7108cc754a74ed5",
+      "included_in_repository": false
+    },
+    {
+      "filename": "EMNLP_Capstone_Guide_EN (1).pdf",
+      "bytes": 321802,
+      "sha256": "f6caf9b4654182dab5e7541237d5ed8e8fbdfbb86160cfc6a42f58022782f339",
+      "included_in_repository": false
+    },
+    {
+      "filename": "Midterm Exam NLP_261008_161545.pdf",
+      "bytes": 435299,
+      "sha256": "3eed29d980c0e1d0f4df996068f13fa6277656fb46e8621b7f49e2858e2b4e28",
+      "included_in_repository": false
+    }
+  ],
+  "proposal_documents": [
+    {
+      "archive": "Midterm-20261010T021032Z-1-001.zip",
+      "member": "Midterm/proposal/Course Research Proposal — Track C  Does Information Value Survive LLM Wording-3.docx",
+      "bytes": 547259,
+      "sha256": "cd445865a141412707773a4913378b0b2ac901254fde7c956f8cf16229422c44"
+    },
+    {
+      "archive": "Midterm-20261010T021032Z-1-001.zip",
+      "member": "Midterm/proposal/Course Research Proposal — Track C  Does Information Value Survive LLM Wording-4.pdf",
+      "bytes": 1157355,
+      "sha256": "f733763684ded7ee8064501097d729bb7d22cd747cb17c9538d29d2d5d45c4e2"
+    }
+  ],
+  "infrastructure_provenance": [
+    {
+      "new_path": "scripts/openrouter_request.py",
+      "origin": "basic infrastructure from earlier local workspace",
+      "sha256": "530ff250d9e831b66c41ba436391bf7e792df13c674ea391095ec82e9d9f2a76",
+      "original_sha256": "530ff250d9e831b66c41ba436391bf7e792df13c674ea391095ec82e9d9f2a76",
+      "normalization": "UTF-8 text with LF newlines"
+    },
+    {
+      "new_path": "tests/test_openrouter_request.py",
+      "origin": "basic infrastructure from earlier local workspace",
+      "sha256": "4476285d841f7840123de8ae02125adaca29d5825ab8d730a55ba0a747d4f7ac",
+      "original_sha256": "4476285d841f7840123de8ae02125adaca29d5825ab8d730a55ba0a747d4f7ac",
+      "normalization": "UTF-8 text with LF newlines"
+    },
+    {
+      "new_path": "docs/openrouter_endpoints.snapshot.json",
+      "origin": "basic infrastructure from earlier local workspace",
+      "sha256": "feccd4a0ffb09a438c509286c89ce7d60e815766c46805d38a2768624d10b2b3",
+      "original_sha256": "f92ba058f51591db2313ac21b43e0f173d1ecd14b2fb28d98eb056666f15cf95",
+      "normalization": "UTF-8 text with LF newlines"
+    }
+  ],
+  "old_experimental_results_imported": false
+}
