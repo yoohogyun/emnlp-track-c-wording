@@ -23,7 +23,7 @@ The LLM is a spokesperson/channel between a learned party A and a fixed-rule opp
 - [x] Document research questions, module boundaries and experiment gates.
 - [x] Verify basic tooling: 10 offline tests pass; dry-run succeeds, no key access or paid request.
 - [x] Create new PRIVATE GitHub repository: https://github.com/yoohogyun/emnlp-track-c-wording (owner/visibility API-verified).
-- [ ] Review staged files, commit and push main; verify local/remote commit equality.
+- [x] Review staged files, commit and push main; initial local/remote commit equality verified.
 - [ ] Add Naura after receiving her verified GitHub username and invite authorization.
 - [ ] Both members review the proposed scope and record actual task ownership.
 - [ ] Freeze the source/document split, annotation guideline and semantic frames.
@@ -63,9 +63,12 @@ git diff --check
 ```
 
 ## Final setup checklist
-- [ ] No credentials, raw archives, old results or personal absolute paths tracked.
+- [x] No credentials, raw archives, old results or personal absolute paths tracked (20 explicitly staged files reviewed).
 - [x] Offline tests and dry-run pass with no key access/API charges.
-- [ ] main has an initial commit; remote contains that commit.
+- [x] main has an initial commit; remote contains that commit.
 - [x] GitHub visibility verified PRIVATE through the API.
-- [ ] Local working tree clean; GitHub owner/URL recorded.
+- [x] Local working tree clean after initial push; owner `yoohogyun`, private remote URL recorded.
 - [x] README clearly identifies the fresh study and unimplemented work.
+- [x] Fresh private GitHub clone passes the same 10 offline tests and dry-run without original workspace data or credentials file. This is an infrastructure checkout check, not independent human reproduction of research.
+
+Setup complete: https://github.com/yoohogyun/emnlp-track-c-wording. New research implementation/experiments remain planned; no fresh-study API generation or training was run. Git commit identity was configured only in this repository using the verified account and GitHub noreply email; global Git configuration was not changed.
